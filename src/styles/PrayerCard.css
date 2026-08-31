@@ -1,0 +1,78 @@
+/**
+ * أنماط بطاقة الصلاة
+ */
+
+.prayer-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+html.dark-mode .prayer-card {
+  background: rgba(42, 42, 62, 0.9);
+}
+
+.prayer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.prayer-card.next-prayer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.prayer-icon-large {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prayer-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+.prayer-card.next-prayer .prayer-name {
+  color: white;
+}
+
+html.dark-mode .prayer-name {
+  color: #a8b4ff;
+}
+
+.prayer-time-display {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.prayer-card.next-prayer .prayer-time-display {
+  color: white;
+}
+
+html.dark-mode .prayer-time-display {
+  color: #e0e0e0;
+}
+
+.next-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff6b6b;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.prayer-card.next-prayer .next-badge {
+  background: rgba(255, 255, 255, 0.3);
+}

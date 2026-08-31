@@ -1,0 +1,98 @@
+/**
+ * أنماط مكون أوقات الصلاة
+ */
+
+.prayer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.prayer-container.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.next-prayer-section h2,
+.all-prayers-section h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.next-prayer-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+html.dark-mode .next-prayer-card {
+  background: rgba(42, 42, 62, 0.95);
+}
+
+.prayer-icon {
+  font-size: 3rem;
+}
+
+.prayer-info {
+  flex: 1;
+}
+
+.prayer-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+html.dark-mode .prayer-info h3 {
+  color: #a8b4ff;
+}
+
+.prayer-time {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+html.dark-mode .prayer-time {
+  color: #e0e0e0;
+}
+
+.notification-btn {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.notification-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.prayers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .next-prayer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .prayers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "تطبيق-تذكير-الصلاة",
+  "version": "1.0.0",
+  "description": "تطبيق ذكي وجميل لتذكير أوقات الصلاة مع واجهة مستخدم احترافية",
+  "main": "index.js",
+  "scripts": {
+    "بدء": "node src/index.js",
+    "تطوير": "nodemon src/index.js",
+    "اختبار": "jest",
+    "بناء": "webpack build"
+  },
+  "keywords": ["صلاة", "تذكير", "إسلام", "أوقات الصلاة"],
+  "مؤلف": "musaedres",
+  "ترخيص": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.4.0",
+    "moment": "^2.29.4",
+    "moment-hijri": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "webpack": "^5.88.0",
+    "jest": "^29.5.0"
+  }
+}

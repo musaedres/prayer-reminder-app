@@ -1,0 +1,90 @@
+/**
+ * أنماط الإحصائيات
+ */
+
+.statistics-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.statistics-container h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+html.dark-mode .stat-card {
+  background: rgba(42, 42, 62, 0.95);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+}
+
+.stat-content h3 {
+  color: #667eea;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+html.dark-mode .stat-content h3 {
+  color: #a8b4ff;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+html.dark-mode .stat-number {
+  color: #e0e0e0;
+}
+
+.motivation-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.motivation-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.motivation-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
